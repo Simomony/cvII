@@ -1,9 +1,9 @@
 :root{
     --blanco: #ffffff;
     --oscuro:#212121;
-    --Primario:#ffc107;
-    --secundario:#0097a7;
-    --gris:#757575;
+    --Primario:#e27611;
+    --secundario:#2075c5;
+    --gris:#c7d4f1;
     --grisClaro: #dfe9fe;
 }
 
@@ -27,30 +27,6 @@ h3{
     font-size: 2rem;
     color: var(--secundario)
 }
-.navegacion{
-    background-color: var(--secundario);
-    padding: 1rem;
-    text-align: center;
-}
-.navegacion-principal{
-    display: inline;
-    flex-direction: column;
-}
-
-.navegacion-principal a{
-    display: inline;
-    text-align: center;
-    color: var(--blanco);
-    padding: 1rem;
-    text-decoration: none;
-
-    font-size: 2rem;
-    font-weight: bold;
-}
-.navegacion-principal a:hover{
-    background-color: var(--Primario);
-    color: var(--oscuro);
-}
 .boton{
     background-color: var(--secundario);
     color: var(--blanco);
@@ -64,7 +40,7 @@ h3{
     max-width: 1200px;
 }
 .fondo{
-    background-image: url(img/fondo.jpg);
+    background-color: var(--secundario);
     background-repeat: no-repeat;
     background-size: cover;
     height: 15rem;
@@ -81,11 +57,11 @@ h3{
 
 /* formulario*/
 .formulario{
-    background-color: var(--gris);
     width: min(60rem,100%);
     margin: 0 auto;
     padding: 2rem;
     border-radius: 1rem;
+    background-color: var(--gris);
 }
 .formulario fieldset{
     border: none;
@@ -96,13 +72,13 @@ h3{
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 2rem;
-    color: var(--Primario);
+    color: var(--oscuro);
 }
 @media (min-width: 768px){
     .contenedor-campos{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto 2rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto auto 3rem;
         column-gap: 2rem;
     }
     .campo:nth-child(3)
@@ -114,7 +90,7 @@ h3{
     margin-bottom: 1rem;
 }
 .campo label{
-    color: var(--blanco);
+    color: var(--oscuro);
     font-weight: bold;
     margin-bottom: .5rem;
     display: block;
@@ -122,11 +98,11 @@ h3{
 .input-text{
     width: 100%;
     border: none;
-    padding: .5rem;
-    border-radius: .5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 .campo textarea{
-    height: 10rem;
+    height: 5rem;
 
 }
 
@@ -149,6 +125,12 @@ h3{
     line-height: 2;
     text-align: center;
 }
+.logos {
+    width: 10rem;
+    height: 10rem;
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+}
 
 /* Datos personales */
 @media (min-width: 768px){
@@ -164,7 +146,12 @@ h3{
     text-align: center;
 }
 .datos-personales p{
-    line-height: 2;
+    line-height: 1;
     margin-top: 0;
     text-align: center;
+}
+.perfil {
+    border-radius: 5rem;
+    height: 10rem;
+    width: 10rem;
 }
